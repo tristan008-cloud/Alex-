@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Rivers | Graphic Designer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Alex Rivers</h1>
+  <p>Creative Graphic Designer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <button id="darkModeToggle">Dark Mode</button>
+  </nav>
+</header>
+
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p class="fade-in">I'm Alex Rivers, a passionate graphic designer creating visual magic through logos, branding, and digital art.</p>
+</section>
+
+<section class="section" id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <img src="https://via.placeholder.com/250x150" alt="Project 1" class="fade-in" onclick="openModal('Project 1')">
+    <img src="https://via.placeholder.com/250x150" alt="Project 2" class="fade-in" onclick="openModal('Project 2')">
+    <img src="https://via.placeholder.com/250x150" alt="Project 3" class="fade-in" onclick="openModal('Project 3')">
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-form fade-in">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Project Title</h2>
+    <p>Details about the project will go here...</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Alex Rivers. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
